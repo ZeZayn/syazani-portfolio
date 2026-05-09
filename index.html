@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Syazani — Backend & DevOps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="wrap">
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">›_ <span>sys@zani</span></div>
+    <div class="nav-links">
+      <button class="nl active" onclick="go('hero',this)">About</button>
+      <button class="nl" onclick="go('skills',this)">Skills</button>
+      <button class="nl" onclick="go('devops',this)">DevOps</button>
+      <button class="nl" onclick="go('projects',this)">Projects</button>
+      <button class="nl" onclick="go('exp',this)">Experience</button>
+      <button class="nl" onclick="go('contact',this)">Contact</button>
+    </div>
+    <button class="connect-btn" onclick="go('contact', document.querySelector('.nl'))">_connect</button>
+  </nav>
+
+  <!-- ===================== HERO / ABOUT ===================== -->
+  <div id="hero" class="section active">
+    <div class="hero">
+      <div class="hero-badge">System Online</div>
+      <div class="hero-name">Muhammad Syazani</div>
+      <div class="hero-role">Backend &amp; DevOps</div>
+      <div class="hero-desc">I build scalable backend systems and deploy them with modern DevOps practices. Bridging the gap between code and infrastructure.</div>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="go('projects', document.querySelector('.nl'))">&#60;/&#62; View Projects</button>
+        <button class="btn-sec" onclick="go('devops', document.querySelector('.nl'))">&#9635; DevOps Work</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-val">3.58</div><div class="hstat-label">CGPA / 4.00</div></div>
+        <div class="hstat"><div class="hstat-val">3+</div><div class="hstat-label">Projects Shipped</div></div>
+        <div class="hstat"><div class="hstat-val">✓</div><div class="hstat-label">Dean's List</div></div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="sec-h"><span class="sec-num">01.</span> About_Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Results-oriented Backend Developer and Junior DevOps Engineer based in Cyberjaya, Malaysia. Strong foundation in building scalable, real-world systems.</p>
+          <p>My expertise spans Node.js REST API development, MySQL database management, and infrastructure automation. I containerize applications with Docker, streamline workflows via n8n, and ensure high-quality delivery through modern CI/CD practices.</p>
+          <div class="about-links">
+            <a class="a-link" href="mailto:syazanisuhaimee77@gmail.com">✉ Email</a>
+            <a class="a-link" href="https://github.com/ZeZayn" target="_blank">⌥ GitHub</a>
+            <a class="a-link" href="https://linkedin.com/in/syazanisuhaimee" target="_blank">in LinkedIn</a>
+          </div>
+        </div>
+        <div class="term-card">
+          <div class="term-bar">
+            <div class="tdot" style="background:#ff5f57"></div>
+            <div class="tdot" style="background:#febc2e"></div>
+            <div class="tdot" style="background:#28c840"></div>
+            <span class="term-title">~/profile/status.sh</span>
+          </div>
+          <div class="term-body">
+            <div><span class="tl">Location:</span>&nbsp;&nbsp;<span class="tv">Cyberjaya, MY</span></div>
+            <div><span class="tl">Role:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">Backend / DevOps</span></div>
+            <div><span class="tl">Education:</span>&nbsp;<span class="tv">BIT (Hons) @ MAHSA</span></div>
+            <div><span class="tl">Stack:</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">Node.js · Docker · n8n</span></div>
+            <div><span class="tl">Status:</span>&nbsp;&nbsp;&nbsp;<span class="ts">● Available for Hire</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SKILLS ===================== -->
+  <div id="skills" class="section">
+    <div class="sec-h"><span class="sec-num">02.</span> Tech_Stack</div>
+    <div class="skill-grid">
+      <div class="sk-card">
+        <div class="sk-head"><span class="sk-icon">⬛</span><span class="sk-title">Backend</span></div>
+        <div class="sk-items">
+          <div class="sk-item"><b>Node.js (Express)</b></div>
+          <div class="sk-item"><b>RESTful APIs</b></div>
+          <div class="sk-item"><b>MySQL &amp; DB Design</b></div>
+          <div class="sk-item"><b>JWT / RBAC Auth</b></div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><span class="sk-icon">🐳</span><span class="sk-title">DevOps</span></div>
+        <div class="sk-items">
+          <div class="sk-item"><b>Docker &amp; Compose</b></div>
+          <div class="sk-item"><b>CI/CD (GitHub Actions)</b></div>
+          <div class="sk-item"><b>Linux (Ubuntu)</b></div>
+          <div class="sk-item"><b>Git &amp; Versioning</b></div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><span class="sk-icon">⚡</span><span class="sk-title">Automation</span></div>
+        <div class="sk-items">
+          <div class="sk-item"><b>n8n Workflows</b></div>
+          <div class="sk-item"><b>API Integration</b></div>
+          <div class="sk-item"><b>Webhooks</b></div>
+          <div class="sk-item"><b>Telegram Bot API</b></div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><span class="sk-icon">&#60;/&#62;</span><span class="sk-title">Languages</span></div>
+        <div class="sk-items">
+          <div class="sk-item"><b>JavaScript (ES6+)</b></div>
+          <div class="sk-item"><b>Python</b></div>
+          <div class="sk-item"><b>Lua</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== DEVOPS ===================== -->
+  <div id="devops" class="section">
+    <div class="sec-h"><span class="sec-num">03.</span> Infrastructure_&amp;_Deployment</div>
+    <div class="devops-grid">
+      <div class="devops-card">
+        <div class="devops-title">Beyond localhost:3000</div>
+        <div class="devops-sub">I architect systems with deployment in mind from day one. A working app isn't finished until it's containerized, monitored, and resilient.</div>
+        <div class="devops-items">
+          <div class="di">
+            <div class="di-icon">🐳</div>
+            <div class="di-text"><strong>Containerization</strong><span>Isolating environments using Docker &amp; orchestrating multi-service architectures with Docker Compose.</span></div>
+          </div>
+          <div class="di">
+            <div class="di-icon">⚙️</div>
+            <div class="di-text"><strong>CI/CD Pipelines</strong><span>Automating Build → Test → Deploy workflows to ensure reliable, repeatable releases.</span></div>
+          </div>
+          <div class="di">
+            <div class="di-icon">🐧</div>
+            <div class="di-text"><strong>System Administration</strong><span>Managing Ubuntu server environments, reverse proxies, and production database maintenance.</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="code-card">
+        <div class="code-bar">
+          <div class="tdot" style="background:#ff5f57"></div>
+          <div class="tdot" style="background:#febc2e"></div>
+          <div class="tdot" style="background:#28c840"></div>
+          <span class="term-title">docker-compose.yml</span>
+        </div>
+        <div class="code-body">
+          <div><span class="ck">version</span><span class="cc">: </span><span class="cs">'3.8'</span></div>
+          <div><span class="ck">services</span><span class="cc">:</span></div>
+          <div>&nbsp;&nbsp;<span class="cv">api</span><span class="cc">:</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">build</span><span class="cc">: </span><span class="cs">.</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">ports</span><span class="cc">:</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cc">- </span><span class="cs">"3000:3000"</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">environment</span><span class="cc">:</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cc">- </span><span class="cv">NODE_ENV</span><span class="cc">=production</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cc">- </span><span class="cv">DB_HOST</span><span class="cc">=mysql</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">depends_on</span><span class="cc">:</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cv">mysql</span><span class="cc">:</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">condition</span><span class="cc">: </span><span class="cs">service_healthy</span></div>
+          <div>&nbsp;&nbsp;<span class="cv">mysql</span><span class="cc">:</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">image</span><span class="cc">: </span><span class="cs">mysql:8.0</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">healthcheck</span><span class="cc">:</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">test</span><span class="cc">: [</span><span class="cs">"CMD","mysqladmin","ping"</span><span class="cc">]</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <div id="projects" class="section">
+    <div class="sec-h"><span class="sec-num">04.</span> Featured_Systems</div>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <div class="proj-icon-row">
+          <div class="proj-icon">⬛</div>
+          <a class="proj-ext" href="https://github.com/ZeZayn" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">CertFlow</div>
+        <div class="proj-sub">Claude AI · n8n · Docker · JWT</div>
+        <div class="proj-desc">AI-powered certificate request automation with multi-role approval. Two-stage Claude AI screening with auto-rejection and policy compliance checks.</div>
+        <ul class="proj-bullets">
+          <li>Pre-submission reason scoring (1–10) with auto-rejection</li>
+          <li>JWT auth + RBAC across 6 endpoints</li>
+          <li>PDF generation + email &amp; Telegram notifications via n8n</li>
+        </ul>
+        <div class="proj-tags">
+          <span class="ptag">Node.js</span><span class="ptag">MySQL</span><span class="ptag">Docker</span><span class="ptag">Claude AI</span><span class="ptag">n8n</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-icon-row">
+          <div class="proj-icon">🗄️</div>
+          <a class="proj-ext" href="https://github.com/ZeZayn/trainflow-api" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">TrainFlow</div>
+        <div class="proj-sub">Node.js + MySQL Architecture</div>
+        <div class="proj-desc">Corporate training management REST API with full program lifecycle — creation, participant registration, enrollment tracking, and analytics reporting.</div>
+        <ul class="proj-bullets">
+          <li>Dual-layer duplicate prevention (409 + UNIQUE constraint)</li>
+          <li>SQL aggregation for analytics &amp; completion reports</li>
+          <li>Docker Compose with MySQL healthcheck sequencing</li>
+        </ul>
+        <div class="proj-tags">
+          <span class="ptag">Node.js</span><span class="ptag">MySQL</span><span class="ptag">Docker</span><span class="ptag">REST API</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-icon-row">
+          <div class="proj-icon">🤖</div>
+          <a class="proj-ext" href="https://github.com/ZeZayn" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">AI Personal Assistant</div>
+        <div class="proj-sub">Telegram + n8n Automation Engine</div>
+        <div class="proj-desc">Automation engine syncing scheduling, emails, and daily task management into a unified workflow via conversational Telegram interface.</div>
+        <ul class="proj-bullets">
+          <li>Speech-to-text modules for voice-driven task input</li>
+          <li>Context-aware multi-step conditional workflows</li>
+          <li>Third-party API integration via n8n</li>
+        </ul>
+        <div class="proj-tags">
+          <span class="ptag">n8n</span><span class="ptag">Telegram Bot</span><span class="ptag">Python</span><span class="ptag">Automation</span>
+        </div>
+      </div>
+      <div class="proj-card proj-card--more">
+        <div class="proj-icon-row"><div class="proj-icon">+</div></div>
+        <div class="proj-name proj-name--green">More Coming...</div>
+        <div class="proj-sub">Always building</div>
+        <div class="proj-desc">Currently exploring more complex distributed systems and AI-integrated pipelines. Watch the GitHub for new drops.</div>
+        <div class="about-links" style="margin-top:16px">
+          <a class="a-link a-link--green" href="https://github.com/ZeZayn" target="_blank">⌥ github.com/ZeZayn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <div id="exp" class="section">
+    <div class="exp-layout">
+      <div>
+        <div class="sec-h"><span class="sec-num">05.</span> Experience</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-date">2025 – 2026</div>
+              <div class="tl-role">Backend Developer</div>
+              <div class="tl-co">Kota Legacy RP</div>
+              <ul class="tl-bullets">
+                <li>Architected backend game logic using Lua and MySQL for high-concurrency player interactions</li>
+                <li>Managed Linux-based production environments ensuring stability</li>
+                <li>Optimized database queries for real-time multiplayer operations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-date">MAY 2025 – NOV 2025</div>
+              <div class="tl-role">Software Testing Intern</div>
+              <div class="tl-co">Pakei Usaha Sdn. Bhd.</div>
+              <ul class="tl-bullets">
+                <li>Functional &amp; regression testing for enterprise software modules</li>
+                <li>Tracked defects in Bugzilla, collaborated with dev team</li>
+                <li>Identified edge-case scenarios during QA lifecycle</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="sec-h"><span class="sec-num">06.</span> Background</div>
+        <div class="bg-right">
+          <div class="edu-card">
+            <div class="edu-head">🎓 Education</div>
+            <div class="edu-deg">Bachelor of Information Technology (Hons)</div>
+            <div class="edu-uni">MAHSA University — Graduated 2025</div>
+            <div class="cgpa-badge">CGPA: 3.58 / 4.00 (Dean's List)</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-head">🏆 Achievements</div>
+            <div class="ach-item">
+              <span>🎖️</span>
+              <div><strong>Dean's List Recipient</strong><span>MAHSA University</span></div>
+            </div>
+            <div class="ach-item" style="margin-top:8px">
+              <span>⚡</span>
+              <div><strong>PayHack 2024</strong><span>Open Finance Hackathon, PayNet Malaysia</span></div>
+            </div>
+          </div>
+          <div class="phil-card">
+            <div class="phil-label">// MY PHILOSOPHY</div>
+            <div class="phil-text">Build → Containerize → Test → Deploy.</div>
+            <div class="phil-sub">I focus on real-world systems with a continuous improvement mindset. Code is a liability until it's running reliably in production.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CONTACT ===================== -->
+  <div id="contact" class="section">
+    <div class="sec-h"><span class="sec-num">07.</span> Initiate_Connection</div>
+    <div class="contact-wrap">
+      <div class="contact-intro">Whether you have a question, a project idea, or a career opportunity — my inbox is always open. Let's build something scalable.</div>
+
+      <!-- SUCCESS MESSAGE (hidden by default) -->
+      <div id="form-success" class="form-success" style="display:none;">
+        <div class="form-success-icon">✓</div>
+        <div class="form-success-title">Message transmitted.</div>
+        <div class="form-success-sub">I'll get back to you soon.</div>
+      </div>
+
+      <form
+        id="contact-form"
+        class="contact-form"
+        action="https://formspree.io/f/xojrkrbq"
+        method="POST"
+      >
+        <label class="form-label" for="name">// NAME</label>
+        <input class="form-input" id="name" type="text" name="name" placeholder="Your name" required/>
+
+        <label class="form-label" for="email">// EMAIL</label>
+        <input class="form-input" id="email" type="email" name="email" placeholder="your@email.com" required/>
+
+        <label class="form-label" for="subject">// SUBJECT</label>
+        <input class="form-input" id="subject" type="text" name="subject" placeholder="Opportunity / Inquiry"/>
+
+        <label class="form-label" for="message">// MESSAGE</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Hello Syazani..." required></textarea>
+
+        <button class="send-btn" type="submit" id="send-btn">
+          <span id="btn-text">Execute Send →</span>
+          <span id="btn-loading" style="display:none;">Transmitting...</span>
+        </button>
+      </form>
+
+      <div class="footer-links">
+        <a class="f-link" href="https://github.com/ZeZayn" target="_blank">⌥ GitHub</a>
+        <a class="f-link" href="https://linkedin.com/in/syazanisuhaimee" target="_blank">in LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end .wrap -->
+
+<script src="main.js"></script>
+</body>
+</html>
